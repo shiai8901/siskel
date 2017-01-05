@@ -51,11 +51,13 @@ describe('Siskel', function() {
     });
 
     it('should trigger sort when the comparator is changed', function() {
+      
       collection.sortByField('rating');
       expect(collection.sort).to.have.been.called;
     });
 
     it('should trigger sort when a model changes', function() {
+
       model.toggleLike();
       expect(collection.sort).to.have.been.called;
     });
